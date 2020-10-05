@@ -1,0 +1,85 @@
+﻿@page
+@model BankAccount.TravelExperts.WebApp.Views.Customer.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Customers</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Customers.CustomerId" />
+            <div class="form-group">
+                <label asp-for="Customers.CustFirstName" class="control-label"></label>
+                <input asp-for="Customers.CustFirstName" class="form-control" />
+                <span asp-validation-for="Customers.CustFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustLastName" class="control-label"></label>
+                <input asp-for="Customers.CustLastName" class="form-control" />
+                <span asp-validation-for="Customers.CustLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustAddress" class="control-label"></label>
+                <input asp-for="Customers.CustAddress" class="form-control" />
+                <span asp-validation-for="Customers.CustAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustCity" class="control-label"></label>
+                <input asp-for="Customers.CustCity" class="form-control" />
+                <span asp-validation-for="Customers.CustCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustProv" class="control-label"></label>
+                <input asp-for="Customers.CustProv" class="form-control" />
+                <span asp-validation-for="Customers.CustProv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustPostal" class="control-label"></label>
+                <input asp-for="Customers.CustPostal" class="form-control" />
+                <span asp-validation-for="Customers.CustPostal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustCountry" class="control-label"></label>
+                <input asp-for="Customers.CustCountry" class="form-control" />
+                <span asp-validation-for="Customers.CustCountry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustHomePhone" class="control-label"></label>
+                <input asp-for="Customers.CustHomePhone" class="form-control" />
+                <span asp-validation-for="Customers.CustHomePhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustBusPhone" class="control-label"></label>
+                <input asp-for="Customers.CustBusPhone" class="form-control" />
+                <span asp-validation-for="Customers.CustBusPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.CustEmail" class="control-label"></label>
+                <input asp-for="Customers.CustEmail" class="form-control" />
+                <span asp-validation-for="Customers.CustEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customers.AgentId" class="control-label"></label>
+                <select asp-for="Customers.AgentId" class="form-control" asp-items="ViewBag.AgentId"></select>
+                <span asp-validation-for="Customers.AgentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
