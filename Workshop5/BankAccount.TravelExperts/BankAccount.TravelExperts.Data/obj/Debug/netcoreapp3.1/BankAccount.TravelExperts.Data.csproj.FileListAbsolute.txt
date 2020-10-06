@@ -10,3 +10,15 @@ C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\SchoolProjects\
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\SchoolProjects\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.dll
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\SchoolProjects\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.pdb
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\SchoolProjects\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.genruntimeconfig.cache
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\bin\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.deps.json
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\bin\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.runtimeconfig.json
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\bin\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.runtimeconfig.dev.json
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\bin\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.dll
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\bin\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.pdb
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.csprojAssemblyReference.cache
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.AssemblyInfoInputs.cache
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.AssemblyInfo.cs
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.csproj.CoreCompileInputs.cache
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.dll
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.pdb
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.Data\obj\Debug\netcoreapp3.1\BankAccount.TravelExperts.Data.genruntimeconfig.cache

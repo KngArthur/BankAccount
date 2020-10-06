@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\b-Art\\Documents\\TECHCareers\\CPRG214-.NetWebApplications\\SchoolProjects\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj": {}
+    "C:\\Users\\mabservi\\source\\repos\\BankAccount\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\b-Art\\Documents\\TECHCareers\\CPRG214-.NetWebApplications\\SchoolProjects\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj": {
+    "C:\\Users\\mabservi\\source\\repos\\BankAccount\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\b-Art\\Documents\\TECHCareers\\CPRG214-.NetWebApplications\\SchoolProjects\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj",
+        "projectUniqueName": "C:\\Users\\mabservi\\source\\repos\\BankAccount\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj",
         "projectName": "BankAccount.TravelExperts.Data",
-        "projectPath": "C:\\Users\\b-Art\\Documents\\TECHCareers\\CPRG214-.NetWebApplications\\SchoolProjects\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj",
-        "packagesPath": "C:\\Users\\b-Art\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\b-Art\\Documents\\TECHCareers\\CPRG214-.NetWebApplications\\SchoolProjects\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\obj\\",
+        "projectPath": "C:\\Users\\mabservi\\source\\repos\\BankAccount\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\BankAccount.TravelExperts.Data.csproj",
+        "packagesPath": "C:\\Users\\mabservi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mabservi\\source\\repos\\BankAccount\\Workshop5\\BankAccount.TravelExperts\\BankAccount.TravelExperts.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\b-Art\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mabservi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

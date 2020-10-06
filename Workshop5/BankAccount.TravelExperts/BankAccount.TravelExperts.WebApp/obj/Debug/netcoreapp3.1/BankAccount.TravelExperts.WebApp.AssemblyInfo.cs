@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("2b3be5ba-83d5-4e0a-bc1a-69c3a629e1a1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BankAccount.TravelExperts.WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
