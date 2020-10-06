@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.TravelExperts.Packages", "BankAccount.TravelExperts.Packages\BankAccount.TravelExperts.Packages.csproj", "{A5CD3B5F-F248-437C-B998-DD8152B074C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5CD3B5F-F248-437C-B998-DD8152B074C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CD3B5F-F248-437C-B998-DD8152B074C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CD3B5F-F248-437C-B998-DD8152B074C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CD3B5F-F248-437C-B998-DD8152B074C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CF6550A-2A22-41F0-B2EE-7CBA2CE3AD10}
+	EndGlobalSection
+EndGlobal
