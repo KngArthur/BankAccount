@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Author:
+ * Date:
+ * Desc: Needs to add and modify products included in the packages. show grid view of all available. Use textboxes to enter info for new and edit
+ */
+
 namespace BankAccount.TravelExperts.Packages
 {
     public partial class frmPackageProductsView : Form

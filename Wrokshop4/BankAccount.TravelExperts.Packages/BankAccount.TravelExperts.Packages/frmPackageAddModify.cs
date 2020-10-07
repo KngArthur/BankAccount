@@ -10,6 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Author: Branden Arthur
+ * Date: October 5 2020
+ * Desc: Needs to add and modify Available packages
+ */
+
 namespace BankAccount.TravelExperts.Packages
 {
     public partial class frmPackageAddModify : Form

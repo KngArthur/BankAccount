@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageProducts.Designer.cs">
+      <DependentUpon>frmManageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSuppliers.Designer.cs">
+      <DependentUpon>frmManageSuppliers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPackageAddModify.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
       <DependentUpon>TravelExperts.dbml</DependentUpon>
     </Compile>
     <Compile Include="Validator.cs" />
+    <EmbeddedResource Include="frmManageProducts.resx">
+      <DependentUpon>frmManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSuppliers.resx">
+      <DependentUpon>frmManageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPackageAddModify.resx">
       <DependentUpon>frmPackageAddModify.cs</DependentUpon>
     </EmbeddedResource>
