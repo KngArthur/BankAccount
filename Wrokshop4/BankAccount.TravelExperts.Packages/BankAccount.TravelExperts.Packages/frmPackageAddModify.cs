@@ -16,7 +16,8 @@ namespace BankAccount.TravelExperts.Packages
     {
         public bool isAdd;
         public Package currentPackage;
-        DateTime? tmpDate;
+        DateTime? startTmpDate;
+        DateTime? endTmpDate;
         public frmPackageAddModify()
         {
             InitializeComponent();
@@ -79,15 +80,22 @@ namespace BankAccount.TravelExperts.Packages
                 {
                     if(isAdd)
                     {
-                        Package pkg = new Package
+                        Package newPackage = new Package()
                         {
                             PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text),
                             PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text),
                             PkgDesc = txbPkgDesc.Text,
                             PkgName = txbPkgName.Text,
-                            PkgStartDate = tmpDate,
-                            PkgEndDate = tmpDate
+                            PkgStartDate = startTmpDate,
+                            PkgEndDate = endTmpDate
                         };
+
+                        using (TravelExpertsDataContext dataContext = new TravelExpertsDataContext())
+                        {
+                            dbContext.Packages.InsertOnSubmit(newPackage);
+                            dbContext.SubmitChanges();
+                        }
+                        DialogResult = DialogResult.OK;
                     }
                                      
                     else
@@ -97,15 +105,12 @@ namespace BankAccount.TravelExperts.Packages
                         pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);
                         pkg.PkgDesc = txbPkgDesc.Text;
                         pkg.PkgName = txbPkgName.Text;
-                        pkg.PkgStartDate = tmpDate;
-                        pkg.PkgEndDate = tmpDate;
-                    }
-                    
+                        pkg.PkgStartDate = startTmpDate;
+                        pkg.PkgEndDate = endTmpDate;
 
-                    // validation
-                        
-                    dbContext.SubmitChanges();
-                    DialogResult = DialogResult.OK;
+                        dbContext.SubmitChanges();
+                        DialogResult = DialogResult.OK;
+                    }
                 }
             }
 
@@ -124,7 +129,7 @@ namespace BankAccount.TravelExperts.Packages
         {
             if (dtpPkgStartDate.Value != null)
             {
-                tmpDate = dtpPkgStartDate.Value;
+                startTmpDate = dtpPkgStartDate.Value;
             }
         }
 
@@ -132,7 +137,7 @@ namespace BankAccount.TravelExperts.Packages
         {
             if (dtpPkgEndDate.Value != null)
             {
-                tmpDate = dtpPkgEndDate.Value;
+                endTmpDate = dtpPkgEndDate.Value;
             }
         }
 
