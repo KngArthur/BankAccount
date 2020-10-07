@@ -83,27 +83,27 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.packages_Products_SupplierDataGridView.DataSource = this.packages_Products_SupplierBindingSource;
-            this.packages_Products_SupplierDataGridView.Location = new System.Drawing.Point(23, 103);
+            this.packages_Products_SupplierDataGridView.Location = new System.Drawing.Point(138, 103);
             this.packages_Products_SupplierDataGridView.Name = "packages_Products_SupplierDataGridView";
-            this.packages_Products_SupplierDataGridView.Size = new System.Drawing.Size(545, 220);
+            this.packages_Products_SupplierDataGridView.Size = new System.Drawing.Size(531, 220);
             this.packages_Products_SupplierDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "PackageId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "PackageId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Package ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "ProductSupplierId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ProductSupplierId";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Supplier ID";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Package";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Package";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Package Name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 554);
+            this.ClientSize = new System.Drawing.Size(814, 554);
             this.Controls.Add(this.packages_Products_SupplierDataGridView);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.btnAdd);

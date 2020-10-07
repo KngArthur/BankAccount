@@ -12,8 +12,7 @@ namespace BankAccount.TravelExperts.Packages
 {
     public partial class frmPackageProducts : Form
     {
-
-        public Package currentPackage;
+        public Package currentPkgProd;
         public frmPackageProducts()
         {
             InitializeComponent();
