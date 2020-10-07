@@ -79,19 +79,19 @@ namespace BankAccount.TravelExperts.Packages
                 {
                     if(isAdd)
                     {
-                        Package pkg = null;
-
-                        pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
-                        pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);
-                        pkg.PkgDesc = txbPkgDesc.Text;
-                        pkg.PkgName = txbPkgName.Text;
-                        pkg.PkgStartDate = tmpDate;
-                        pkg.PkgEndDate = tmpDate;
+                        Package pkg = new Package
+                        {
+                            PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text),
+                            PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text),
+                            PkgDesc = txbPkgDesc.Text,
+                            PkgName = txbPkgName.Text,
+                            PkgStartDate = tmpDate,
+                            PkgEndDate = tmpDate
+                        };
                     }
+                                     
                     else
                     {
-                        //Package pkg = null;
-
                         Package pkg = dbContext.Packages.SingleOrDefault(p => p.PackageId == Convert.ToInt32(txbPackageId.Text));
                         pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
                         pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);

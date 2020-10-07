@@ -23,13 +23,29 @@ namespace BankAccount.TravelExperts.Packages
             using (TravelExpertsDataContext dbContext = new TravelExpertsDataContext())
             {
                 dbContext.DeferredLoadingEnabled = false;
-                packages_Products_SupplierDataGridView.DataSource = from psi in dbContext.Packages_Products_Suppliers
+                packages_Products_SupplierDataGridView.DataSource = (from psi in dbContext.Packages_Products_Suppliers
+                                                                     //join ps in Products_Supplier on psi
                                                                     //where psi.ProductSupplierId
                                                                     //join ps in dbContext.Products_Suppliers on psi.ProductSupplierId equals ps.ProductSupplierId
                                                                     //orderby psi.PackageId
                                                                     // statment where products = value passed from package ID?
-                                                                    select psi;
+                                                                    select psi).ToList();
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
