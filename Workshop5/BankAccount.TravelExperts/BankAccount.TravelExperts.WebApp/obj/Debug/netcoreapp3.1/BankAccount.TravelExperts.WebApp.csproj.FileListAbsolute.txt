@@ -338,7 +338,6 @@ C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\B
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Index.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -359,6 +358,7 @@ C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\B
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Details.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
 C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\mabservi\source\repos\BankAccount\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\bin\Debug\netcoreapp3.1\appsettings.json
@@ -526,6 +526,7 @@ C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Wo
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Details.cshtml.g.cs
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Index.cshtml.g.cs
+C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\b-Art\Documents\TECHCareers\CPRG214-.NetWebApplications\FinalProject\Workshop5\BankAccount.TravelExperts\BankAccount.TravelExperts.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
