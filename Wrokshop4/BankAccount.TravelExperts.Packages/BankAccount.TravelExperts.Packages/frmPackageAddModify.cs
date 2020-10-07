@@ -26,7 +26,7 @@ namespace BankAccount.TravelExperts.Packages
         {
             if (isAdd)
             {
-                txbPkgAgencyCommission.Focus();
+                txbPkgName.Focus();
             }
             else
             {
@@ -55,7 +55,7 @@ namespace BankAccount.TravelExperts.Packages
             }
 
             txbPackageId.Text = currentPackage.PackageId.ToString();
-            txbPkgAgencyCommission.Text = currentPackage.PkgAgencyCommission.ToString();
+            txbPkgAgencyCommission.Text = currentPackage.PkgAgencyCommission.ToString("c");
             txbPkgBasePrice.Text = currentPackage.PkgBasePrice.ToString("0.##");
             txbPkgDesc.Text = currentPackage.PkgDesc;
             txbPkgName.Text = currentPackage.PkgName;
@@ -68,6 +68,7 @@ namespace BankAccount.TravelExperts.Packages
                 using (TravelExpertsDataContext dbContext = new TravelExpertsDataContext())
                 {
                     Package pkg = null;
+
                     pkg = dbContext.Packages.SingleOrDefault(p => p.PackageId == Convert.ToInt32(txbPackageId.Text));
                     pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
                     pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);

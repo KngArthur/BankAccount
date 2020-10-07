@@ -75,7 +75,7 @@
             pkgAgencyCommissionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pkgAgencyCommissionLabel.Name = "pkgAgencyCommissionLabel";
             pkgAgencyCommissionLabel.Size = new System.Drawing.Size(161, 16);
-            pkgAgencyCommissionLabel.TabIndex = 2;
+            pkgAgencyCommissionLabel.TabIndex = 12;
             pkgAgencyCommissionLabel.Text = "Pkg Agency Commission:";
             // 
             // pkgBasePriceLabel
@@ -85,7 +85,7 @@
             pkgBasePriceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pkgBasePriceLabel.Name = "pkgBasePriceLabel";
             pkgBasePriceLabel.Size = new System.Drawing.Size(104, 16);
-            pkgBasePriceLabel.TabIndex = 4;
+            pkgBasePriceLabel.TabIndex = 10;
             pkgBasePriceLabel.Text = "Pkg Base Price:";
             // 
             // pkgDescLabel
@@ -95,7 +95,7 @@
             pkgDescLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pkgDescLabel.Name = "pkgDescLabel";
             pkgDescLabel.Size = new System.Drawing.Size(70, 16);
-            pkgDescLabel.TabIndex = 6;
+            pkgDescLabel.TabIndex = 8;
             pkgDescLabel.Text = "Pkg Desc:";
             // 
             // pkgEndDateLabel
@@ -105,7 +105,7 @@
             pkgEndDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pkgEndDateLabel.Name = "pkgEndDateLabel";
             pkgEndDateLabel.Size = new System.Drawing.Size(94, 16);
-            pkgEndDateLabel.TabIndex = 8;
+            pkgEndDateLabel.TabIndex = 6;
             pkgEndDateLabel.Text = "Pkg End Date:";
             // 
             // pkgNameLabel
@@ -115,7 +115,7 @@
             pkgNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pkgNameLabel.Name = "pkgNameLabel";
             pkgNameLabel.Size = new System.Drawing.Size(75, 16);
-            pkgNameLabel.TabIndex = 10;
+            pkgNameLabel.TabIndex = 2;
             pkgNameLabel.Text = "Pkg Name:";
             // 
             // pkgStartDateLabel
@@ -125,7 +125,7 @@
             pkgStartDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pkgStartDateLabel.Name = "pkgStartDateLabel";
             pkgStartDateLabel.Size = new System.Drawing.Size(97, 16);
-            pkgStartDateLabel.TabIndex = 12;
+            pkgStartDateLabel.TabIndex = 4;
             pkgStartDateLabel.Text = "Pkg Start Date:";
             // 
             // packages_Products_SupplierBindingSource
@@ -140,7 +140,7 @@
             // 
             this.txbPackageId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PackageId", true));
             this.txbPackageId.Location = new System.Drawing.Point(219, 112);
-            this.txbPackageId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPackageId.Margin = new System.Windows.Forms.Padding(4);
             this.txbPackageId.Name = "txbPackageId";
             this.txbPackageId.Size = new System.Drawing.Size(265, 22);
             this.txbPackageId.TabIndex = 1;
@@ -149,56 +149,56 @@
             // 
             this.txbPkgAgencyCommission.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PkgAgencyCommission", true));
             this.txbPkgAgencyCommission.Location = new System.Drawing.Point(219, 292);
-            this.txbPkgAgencyCommission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPkgAgencyCommission.Margin = new System.Windows.Forms.Padding(4);
             this.txbPkgAgencyCommission.Name = "txbPkgAgencyCommission";
             this.txbPkgAgencyCommission.Size = new System.Drawing.Size(265, 22);
-            this.txbPkgAgencyCommission.TabIndex = 3;
+            this.txbPkgAgencyCommission.TabIndex = 13;
             // 
             // txbPkgBasePrice
             // 
             this.txbPkgBasePrice.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PkgBasePrice", true));
             this.txbPkgBasePrice.Location = new System.Drawing.Point(219, 262);
-            this.txbPkgBasePrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPkgBasePrice.Margin = new System.Windows.Forms.Padding(4);
             this.txbPkgBasePrice.Name = "txbPkgBasePrice";
             this.txbPkgBasePrice.Size = new System.Drawing.Size(265, 22);
-            this.txbPkgBasePrice.TabIndex = 5;
+            this.txbPkgBasePrice.TabIndex = 11;
             // 
             // txbPkgDesc
             // 
             this.txbPkgDesc.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PkgDesc", true));
             this.txbPkgDesc.Location = new System.Drawing.Point(219, 232);
-            this.txbPkgDesc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPkgDesc.Margin = new System.Windows.Forms.Padding(4);
             this.txbPkgDesc.Name = "txbPkgDesc";
             this.txbPkgDesc.Size = new System.Drawing.Size(265, 22);
-            this.txbPkgDesc.TabIndex = 7;
+            this.txbPkgDesc.TabIndex = 9;
             // 
             // dtpPkgEndDate
             // 
             this.dtpPkgEndDate.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.packageBindingSource, "PkgEndDate", true));
             this.dtpPkgEndDate.Location = new System.Drawing.Point(219, 202);
-            this.dtpPkgEndDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpPkgEndDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpPkgEndDate.Name = "dtpPkgEndDate";
             this.dtpPkgEndDate.Size = new System.Drawing.Size(265, 22);
-            this.dtpPkgEndDate.TabIndex = 9;
+            this.dtpPkgEndDate.TabIndex = 7;
             this.dtpPkgEndDate.ValueChanged += new System.EventHandler(this.dtpPkgEndDate_ValueChanged);
             // 
             // txbPkgName
             // 
             this.txbPkgName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PkgName", true));
             this.txbPkgName.Location = new System.Drawing.Point(219, 142);
-            this.txbPkgName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPkgName.Margin = new System.Windows.Forms.Padding(4);
             this.txbPkgName.Name = "txbPkgName";
             this.txbPkgName.Size = new System.Drawing.Size(265, 22);
-            this.txbPkgName.TabIndex = 11;
+            this.txbPkgName.TabIndex = 3;
             // 
             // dtpPkgStartDate
             // 
             this.dtpPkgStartDate.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.packageBindingSource, "PkgStartDate", true));
             this.dtpPkgStartDate.Location = new System.Drawing.Point(219, 172);
-            this.dtpPkgStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpPkgStartDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpPkgStartDate.Name = "dtpPkgStartDate";
             this.dtpPkgStartDate.Size = new System.Drawing.Size(265, 22);
-            this.dtpPkgStartDate.TabIndex = 13;
+            this.dtpPkgStartDate.TabIndex = 5;
             this.dtpPkgStartDate.ValueChanged += new System.EventHandler(this.dtpPkgStartDate_ValueChanged);
             // 
             // btnCancel
@@ -247,9 +247,9 @@
             this.Controls.Add(pkgStartDateLabel);
             this.Controls.Add(this.dtpPkgStartDate);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPackageAddModify";
-            this.Text = "PackageAdd";
+            this.Text = "2";
             this.Load += new System.EventHandler(this.frmPackageAddModify_Load);
             ((System.ComponentModel.ISupportInitialize)(this.packages_Products_SupplierBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource)).EndInit();

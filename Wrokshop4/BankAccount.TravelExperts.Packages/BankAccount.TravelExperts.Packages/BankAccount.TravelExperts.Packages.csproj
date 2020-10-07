@@ -53,11 +53,11 @@
     <Compile Include="frmPackageAddModify.Designer.cs">
       <DependentUpon>frmPackageAddModify.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPackageProducts.cs">
+    <Compile Include="frmPackageProductsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPackageProducts.Designer.cs">
-      <DependentUpon>frmPackageProducts.cs</DependentUpon>
+    <Compile Include="frmPackageProductsView.Designer.cs">
+      <DependentUpon>frmPackageProductsView.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPackageView.cs">
       <SubType>Form</SubType>
@@ -77,8 +77,8 @@
     <EmbeddedResource Include="frmPackageAddModify.resx">
       <DependentUpon>frmPackageAddModify.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPackageProducts.resx">
-      <DependentUpon>frmPackageProducts.cs</DependentUpon>
+    <EmbeddedResource Include="frmPackageProductsView.resx">
+      <DependentUpon>frmPackageProductsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPackageView.resx">
       <DependentUpon>frmPackageView.cs</DependentUpon>

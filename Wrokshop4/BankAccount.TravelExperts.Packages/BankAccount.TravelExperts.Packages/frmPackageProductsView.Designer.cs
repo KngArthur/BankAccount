@@ -1,6 +1,6 @@
 ﻿namespace BankAccount.TravelExperts.Packages
 {
-    partial class frmPackageProducts
+    partial class frmPackageProductsView
     {
         /// <summary>
         /// Required designer variable.

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace BankAccount.TravelExperts.Packages
 {
-    public partial class frmPackageProducts : Form
+    public partial class frmPackageProductsView : Form
     {
         public Package currentPkgProd;
-        public frmPackageProducts()
+        public frmPackageProductsView()
         {
             InitializeComponent();
         }
@@ -24,6 +24,7 @@ namespace BankAccount.TravelExperts.Packages
             {
                 dbContext.DeferredLoadingEnabled = false;
                 packages_Products_SupplierDataGridView.DataSource = from psi in dbContext.Packages_Products_Suppliers
+                                                                    //where psi.ProductSupplierId
                                                                     //join ps in dbContext.Products_Suppliers on psi.ProductSupplierId equals ps.ProductSupplierId
                                                                     //orderby psi.PackageId
                                                                     // statment where products = value passed from package ID?

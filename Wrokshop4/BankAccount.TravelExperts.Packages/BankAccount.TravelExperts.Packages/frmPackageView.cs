@@ -20,20 +20,14 @@ namespace BankAccount.TravelExperts.Packages
 
         private void frmPackageView_Load(object sender, EventArgs e)
         {
+            // load package list to grid
             using (TravelExpertsDataContext dbContext = new TravelExpertsDataContext())
             {
-
-                //productDataGridView.DataSource = dbContext.Products; // entire table - no need for LINQ query
-                packageDataGridView.DataSource = from pack in dbContext.Packages
-                                                 
+                // select all packages ordered by start date
+                packageDataGridView.DataSource = from pack in dbContext.Packages                                                 
                                                  orderby pack.PkgStartDate
                                                  select pack;
             }
-        }
-
-        private void packageDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void btnViewProducts_Click(object sender, EventArgs e)
@@ -52,7 +46,7 @@ namespace BankAccount.TravelExperts.Packages
             }
 
             //Open new form to view products by package ID
-            frmPackageProducts secondForm = new frmPackageProducts();
+            frmPackageProductsView secondForm = new frmPackageProductsView();
             secondForm.currentPkgProd = currentPkgProd;
             DialogResult result = secondForm.ShowDialog();
             if (result == DialogResult.OK || result == DialogResult.Retry)
