@@ -27,6 +27,7 @@ namespace BankAccount.TravelExperts.Packages
             if (isAdd)
             {
                 txbPkgName.Focus();
+                txbPackageId.Enabled = false;
             }
             else
             {
@@ -55,7 +56,16 @@ namespace BankAccount.TravelExperts.Packages
             }
 
             txbPackageId.Text = currentPackage.PackageId.ToString();
-            txbPkgAgencyCommission.Text = currentPackage.PkgAgencyCommission.ToString("c");
+
+            if (currentPackage.PkgAgencyCommission != null)
+            {
+                decimal temp = (decimal) currentPackage.PkgAgencyCommission;
+                txbPkgAgencyCommission.Text = temp.ToString("c");
+            }
+            else
+            {
+                txbPkgAgencyCommission.Text = "";
+            }
             txbPkgBasePrice.Text = currentPackage.PkgBasePrice.ToString("0.##");
             txbPkgDesc.Text = currentPackage.PkgDesc;
             txbPkgName.Text = currentPackage.PkgName;
@@ -69,7 +79,7 @@ namespace BankAccount.TravelExperts.Packages
                 {
                     Package pkg = null;
 
-                    pkg = dbContext.Packages.SingleOrDefault(p => p.PackageId == Convert.ToInt32(txbPackageId.Text));
+                    //pkg = dbContext.Packages.SingleOrDefault(p => p.PackageId == Convert.ToInt32(txbPackageId.Text));
                     pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
                     pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);
                     pkg.PkgDesc = txbPkgDesc.Text;

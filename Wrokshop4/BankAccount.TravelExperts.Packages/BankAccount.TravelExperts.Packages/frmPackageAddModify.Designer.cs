@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label packageIdLabel;
             System.Windows.Forms.Label pkgAgencyCommissionLabel;
             System.Windows.Forms.Label pkgBasePriceLabel;
             System.Windows.Forms.Label pkgDescLabel;
             System.Windows.Forms.Label pkgEndDateLabel;
             System.Windows.Forms.Label pkgNameLabel;
             System.Windows.Forms.Label pkgStartDateLabel;
+            System.Windows.Forms.Label packageIdLabel;
             this.packages_Products_SupplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.packageBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txbPackageId = new System.Windows.Forms.TextBox();
             this.txbPkgAgencyCommission = new System.Windows.Forms.TextBox();
             this.txbPkgBasePrice = new System.Windows.Forms.TextBox();
             this.txbPkgDesc = new System.Windows.Forms.TextBox();
@@ -47,26 +46,17 @@
             this.dtpPkgStartDate = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            packageIdLabel = new System.Windows.Forms.Label();
+            this.txbPackageId = new System.Windows.Forms.TextBox();
             pkgAgencyCommissionLabel = new System.Windows.Forms.Label();
             pkgBasePriceLabel = new System.Windows.Forms.Label();
             pkgDescLabel = new System.Windows.Forms.Label();
             pkgEndDateLabel = new System.Windows.Forms.Label();
             pkgNameLabel = new System.Windows.Forms.Label();
             pkgStartDateLabel = new System.Windows.Forms.Label();
+            packageIdLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.packages_Products_SupplierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // packageIdLabel
-            // 
-            packageIdLabel.AutoSize = true;
-            packageIdLabel.Location = new System.Drawing.Point(43, 116);
-            packageIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            packageIdLabel.Name = "packageIdLabel";
-            packageIdLabel.Size = new System.Drawing.Size(80, 16);
-            packageIdLabel.TabIndex = 0;
-            packageIdLabel.Text = "Package Id:";
             // 
             // pkgAgencyCommissionLabel
             // 
@@ -135,15 +125,6 @@
             // packageBindingSource
             // 
             this.packageBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Package);
-            // 
-            // txbPackageId
-            // 
-            this.txbPackageId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PackageId", true));
-            this.txbPackageId.Location = new System.Drawing.Point(219, 112);
-            this.txbPackageId.Margin = new System.Windows.Forms.Padding(4);
-            this.txbPackageId.Name = "txbPackageId";
-            this.txbPackageId.Size = new System.Drawing.Size(265, 22);
-            this.txbPackageId.TabIndex = 1;
             // 
             // txbPkgAgencyCommission
             // 
@@ -225,6 +206,25 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // packageIdLabel
+            // 
+            packageIdLabel.AutoSize = true;
+            packageIdLabel.Location = new System.Drawing.Point(43, 116);
+            packageIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            packageIdLabel.Name = "packageIdLabel";
+            packageIdLabel.Size = new System.Drawing.Size(80, 16);
+            packageIdLabel.TabIndex = 0;
+            packageIdLabel.Text = "Package Id:";
+            // 
+            // txbPackageId
+            // 
+            this.txbPackageId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.packageBindingSource, "PackageId", true));
+            this.txbPackageId.Location = new System.Drawing.Point(219, 112);
+            this.txbPackageId.Margin = new System.Windows.Forms.Padding(4);
+            this.txbPackageId.Name = "txbPackageId";
+            this.txbPackageId.Size = new System.Drawing.Size(265, 22);
+            this.txbPackageId.TabIndex = 1;
+            // 
             // frmPackageAddModify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -262,7 +262,6 @@
 
         private System.Windows.Forms.BindingSource packages_Products_SupplierBindingSource;
         private System.Windows.Forms.BindingSource packageBindingSource;
-        private System.Windows.Forms.TextBox txbPackageId;
         private System.Windows.Forms.TextBox txbPkgAgencyCommission;
         private System.Windows.Forms.TextBox txbPkgBasePrice;
         private System.Windows.Forms.TextBox txbPkgDesc;
@@ -271,5 +270,6 @@
         private System.Windows.Forms.DateTimePicker dtpPkgStartDate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txbPackageId;
     }
 }
