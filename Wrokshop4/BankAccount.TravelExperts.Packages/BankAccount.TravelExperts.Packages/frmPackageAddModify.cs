@@ -60,7 +60,7 @@ namespace BankAccount.TravelExperts.Packages
             if (currentPackage.PkgAgencyCommission != null)
             {
                 decimal temp = (decimal) currentPackage.PkgAgencyCommission;
-                txbPkgAgencyCommission.Text = temp.ToString("c");
+                txbPkgAgencyCommission.Text = temp.ToString("0.##");
             }
             else
             {
@@ -77,15 +77,30 @@ namespace BankAccount.TravelExperts.Packages
             {
                 using (TravelExpertsDataContext dbContext = new TravelExpertsDataContext())
                 {
-                    Package pkg = null;
+                    if(isAdd)
+                    {
+                        Package pkg = null;
 
-                    //pkg = dbContext.Packages.SingleOrDefault(p => p.PackageId == Convert.ToInt32(txbPackageId.Text));
-                    pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
-                    pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);
-                    pkg.PkgDesc = txbPkgDesc.Text;
-                    pkg.PkgName = txbPkgName.Text;
-                    pkg.PkgStartDate = tmpDate;
-                    pkg.PkgEndDate = tmpDate;
+                        pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
+                        pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);
+                        pkg.PkgDesc = txbPkgDesc.Text;
+                        pkg.PkgName = txbPkgName.Text;
+                        pkg.PkgStartDate = tmpDate;
+                        pkg.PkgEndDate = tmpDate;
+                    }
+                    else
+                    {
+                        //Package pkg = null;
+
+                        Package pkg = dbContext.Packages.SingleOrDefault(p => p.PackageId == Convert.ToInt32(txbPackageId.Text));
+                        pkg.PkgAgencyCommission = Convert.ToDecimal(txbPkgAgencyCommission.Text);
+                        pkg.PkgBasePrice = Convert.ToDecimal(txbPkgBasePrice.Text);
+                        pkg.PkgDesc = txbPkgDesc.Text;
+                        pkg.PkgName = txbPkgName.Text;
+                        pkg.PkgStartDate = tmpDate;
+                        pkg.PkgEndDate = tmpDate;
+                    }
+                    
 
                     // validation
                         
