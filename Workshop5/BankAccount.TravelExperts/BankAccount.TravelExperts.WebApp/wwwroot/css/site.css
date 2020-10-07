@@ -73,6 +73,6 @@ body {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: lightcoral;
-    background-image: url('wwwroot\Images\boeing-737-next-generation-plane-wing-thumbnail.jpg');
+    background-image: url('~\wwwroot\Images\boeing-737-next-generation-plane-wing-thumbnail.jpg');
     border-radius: 0.3rem;
 }
