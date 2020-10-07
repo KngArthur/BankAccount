@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TravelExperts">
+  <DataContextMoniker Name="/TravelExpertsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f5371582-2884-4db4-b097-6ebee86f3665" absoluteBounds="3.375, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TravelExpertsDataContext/Package" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed027cfa-d390-4f60-9489-54fd35121cbe" absoluteBounds="3.39, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7eeeb5a1-8a2e-43e6-93a3-a8a3a46f924b" absoluteBounds="5.75, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TravelExpertsDataContext/Packages_Products_Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf686889-99aa-4815-9a54-3de92b231863" absoluteBounds="5.765, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 1.09699625651042); (5.75 : 1.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TravelExpertsDataContext/Package/Package_Packages_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="f5371582-2884-4db4-b097-6ebee86f3665" />
+        <classShapeMoniker Id="7eeeb5a1-8a2e-43e6-93a3-a8a3a46f924b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5bc85d93-189f-4ccd-b852-64a2e1af44c8" absoluteBounds="3.375, 4.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TravelExpertsDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea8a0754-fbfc-4e33-8a85-6c35e82f4d8f" absoluteBounds="3.3899999999999997, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47705910-6692-49a4-b33f-ff598486ef80" absoluteBounds="5.75, 2.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TravelExpertsDataContext/Products_Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c58a2e8-119a-42c7-98d4-f6cb5aae3004" absoluteBounds="5.765, 2.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 2.25); (6.75 : 1.69399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TravelExpertsDataContext/Products_Supplier/Products_Supplier_Packages_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="47705910-6692-49a4-b33f-ff598486ef80" />
+        <classShapeMoniker Id="7eeeb5a1-8a2e-43e6-93a3-a8a3a46f924b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.375 : 4.875); (5.75 : 4.5); (5.75 : 4.0112939453125); (5.375 : 4.0112939453125); (5.75 : 3.6362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TravelExpertsDataContext/Product/Product_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="5bc85d93-189f-4ccd-b852-64a2e1af44c8" />
+        <classShapeMoniker Id="47705910-6692-49a4-b33f-ff598486ef80" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c0254429-b8bf-4cac-9631-dbb817efd9c8" absoluteBounds="5.875, 4.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TravelExpertsDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc8ea782-eae3-405b-9a23-3d49d2fe54eb" absoluteBounds="5.89, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.8125 : 4.875); (6.8125 : 3.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TravelExpertsDataContext/Supplier/Supplier_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="c0254429-b8bf-4cac-9631-dbb817efd9c8" />
+        <classShapeMoniker Id="47705910-6692-49a4-b33f-ff598486ef80" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
