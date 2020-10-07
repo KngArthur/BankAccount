@@ -73,6 +73,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TravelExperts.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Validator.cs" />
     <EmbeddedResource Include="frmPackageAddModify.resx">
       <DependentUpon>frmPackageAddModify.cs</DependentUpon>
     </EmbeddedResource>

@@ -53,7 +53,7 @@
             this.btnModify.Location = new System.Drawing.Point(355, 422);
             this.btnModify.Margin = new System.Windows.Forms.Padding(4);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(213, 49);
+            this.btnModify.Size = new System.Drawing.Size(160, 40);
             this.btnModify.TabIndex = 6;
             this.btnModify.Text = "&Modify Existing";
             this.btnModify.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@
             this.btnAdd.Location = new System.Drawing.Point(32, 422);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(213, 49);
+            this.btnAdd.Size = new System.Drawing.Size(160, 40);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "&Add New";
             this.btnAdd.UseVisualStyleBackColor = true;
