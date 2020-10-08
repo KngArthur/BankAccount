@@ -80,6 +80,9 @@
     <Compile Include="Methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TravelExperts.cs">
+      <DependentUpon>TravelExperts.dbml</DependentUpon>
+    </Compile>
     <Compile Include="TravelExperts.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

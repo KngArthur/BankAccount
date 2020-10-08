@@ -50,9 +50,11 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnMngProducts = new System.Windows.Forms.Button();
             this.btnMngSuppliers = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.packageDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packages_Products_SuppliersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // packageDataGridView
@@ -212,11 +214,20 @@
             this.btnMngSuppliers.Text = "Manage Suppliers";
             this.btnMngSuppliers.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(471, 436);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 11;
+            // 
             // frmPackageView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 554);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnMngSuppliers);
             this.Controls.Add(this.btnMngProducts);
             this.Controls.Add(this.btnModify);
@@ -232,6 +243,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.packageDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packages_Products_SuppliersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,6 +266,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnMngProducts;
         private System.Windows.Forms.Button btnMngSuppliers;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

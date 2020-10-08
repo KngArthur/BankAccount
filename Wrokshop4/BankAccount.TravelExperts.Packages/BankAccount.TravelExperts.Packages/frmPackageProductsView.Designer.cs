@@ -29,20 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnModify = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.packages_Products_SupplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnExit = new System.Windows.Forms.Button();
             this.PackageProductsGridView = new System.Windows.Forms.DataGridView();
+            this.productsSuppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.packages_Products_SupplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.packageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.packageBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.PackageProductsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsSuppliersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packages_Products_SupplierBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PackageProductsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Product);
             // 
             // btnModify
             // 
@@ -68,10 +72,6 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // packages_Products_SupplierBindingSource
-            // 
-            this.packages_Products_SupplierBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Packages_Products_Supplier);
-            // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,16 +87,42 @@
             // PackageProductsGridView
             // 
             this.PackageProductsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PackageProductsGridView.Location = new System.Drawing.Point(12, 57);
+            this.PackageProductsGridView.Location = new System.Drawing.Point(12, 69);
             this.PackageProductsGridView.Name = "PackageProductsGridView";
-            this.PackageProductsGridView.Size = new System.Drawing.Size(471, 240);
+            this.PackageProductsGridView.Size = new System.Drawing.Size(531, 285);
             this.PackageProductsGridView.TabIndex = 17;
+            this.PackageProductsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PackageProductsGridView_CellContentClick);
+            // 
+            // productsSuppliersBindingSource
+            // 
+            this.productsSuppliersBindingSource.DataMember = "Products_Suppliers";
+            this.productsSuppliersBindingSource.DataSource = this.productBindingSource;
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Product);
+            // 
+            // packages_Products_SupplierBindingSource
+            // 
+            this.packages_Products_SupplierBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Packages_Products_Supplier);
+            // 
+            // packageBindingSource
+            // 
+            this.packageBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Package);
+            // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataSource = typeof(BankAccount.TravelExperts.Packages.Supplier);
+            // 
+            // packageBindingSource1
+            // 
+            this.packageBindingSource1.DataSource = typeof(BankAccount.TravelExperts.Packages.Package);
             // 
             // frmPackageProductsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 554);
+            this.ClientSize = new System.Drawing.Size(685, 554);
             this.Controls.Add(this.PackageProductsGridView);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnModify);
@@ -106,9 +132,13 @@
             this.Name = "frmPackageProductsView";
             this.Text = "frmPackageProducts";
             this.Load += new System.EventHandler(this.frmPackageProducts_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PackageProductsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsSuppliersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packages_Products_SupplierBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PackageProductsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,5 +151,9 @@
         private System.Windows.Forms.BindingSource packages_Products_SupplierBindingSource;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridView PackageProductsGridView;
+        private System.Windows.Forms.BindingSource packageBindingSource;
+        private System.Windows.Forms.BindingSource supplierBindingSource;
+        private System.Windows.Forms.BindingSource productsSuppliersBindingSource;
+        private System.Windows.Forms.BindingSource packageBindingSource1;
     }
 }

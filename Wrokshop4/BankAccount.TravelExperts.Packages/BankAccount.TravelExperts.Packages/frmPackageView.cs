@@ -32,6 +32,8 @@ namespace BankAccount.TravelExperts.Packages
 
         private void btnViewProducts_Click(object sender, EventArgs e)
         {
+            frmPackageProductsView secondForm = new frmPackageProductsView();
+
             // find column and row location of ID
             int rowNum = packageDataGridView.CurrentCell.RowIndex;
             int packID = (int)packageDataGridView["dataGridViewTextBoxColumn1", rowNum].Value;
@@ -46,19 +48,19 @@ namespace BankAccount.TravelExperts.Packages
             }
 
             //Open new form to view products by package ID
-            frmPackageProductsView secondForm = new frmPackageProductsView();
-            secondForm.currentPkgProd = currentPkgProd;
             DialogResult result = secondForm.ShowDialog();
-            if (result == DialogResult.OK || result == DialogResult.Retry)
+            using (TravelExpertsDataContext dbContext = new TravelExpertsDataContext())
             {
-                RefreshGridView();
+                if (result == DialogResult.OK || result == DialogResult.Retry)
+                {
+                    RefreshGridView();
+                }
             }
+            
+            
+            
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -97,10 +99,16 @@ namespace BankAccount.TravelExperts.Packages
             }
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void RefreshGridView()
         {
             TravelExpertsDataContext dbContext = new TravelExpertsDataContext();
             packageDataGridView.DataSource = dbContext.Packages;
         }
+
     }
 }

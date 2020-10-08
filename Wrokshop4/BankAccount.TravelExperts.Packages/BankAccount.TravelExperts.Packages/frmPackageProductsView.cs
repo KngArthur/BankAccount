@@ -34,12 +34,17 @@ namespace BankAccount.TravelExperts.Packages
                                                       join ps in dbContext.Products_Suppliers on psi.ProductSupplierId equals ps.ProductSupplierId
                                                       join p in dbContext.Products on ps.ProductId equals p.ProductId
                                                       join s in dbContext.Suppliers on ps.SupplierId equals s.SupplierId
-                                                     select new
+
+                                                      select new
                                                      {
                                                         pack.PkgName,
                                                         p.ProdName,
-                                                        s.SupName
-                                                     }).ToList();
+                                                        s.SupName                                                        
+                                                     });
+
+                
+
+
 
 
 
@@ -61,6 +66,11 @@ namespace BankAccount.TravelExperts.Packages
         }
 
         private void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PackageProductsGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
