@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Author:
- * Date:
+ * Author: Branden Arthur
+ * Date: October 7 2020
  * Desc: Needs to add and modify products included in the packages. show grid view of all available. Use textboxes to enter info for new and edit
  */
 
@@ -29,13 +29,24 @@ namespace BankAccount.TravelExperts.Packages
             using (TravelExpertsDataContext dbContext = new TravelExpertsDataContext())
             {
                 dbContext.DeferredLoadingEnabled = false;
-                packages_Products_SupplierDataGridView.DataSource = (from psi in dbContext.Packages_Products_Suppliers
-                                                                     //join ps in Products_Supplier on psi
-                                                                    //where psi.ProductSupplierId
-                                                                    //join ps in dbContext.Products_Suppliers on psi.ProductSupplierId equals ps.ProductSupplierId
-                                                                    //orderby psi.PackageId
-                                                                    // statment where products = value passed from package ID?
-                                                                    select psi).ToList();
+                PackageProductsGridView.DataSource = (from pack in dbContext.Packages
+                                                      join psi in dbContext.Packages_Products_Suppliers on pack.PackageId equals psi.PackageId
+                                                      join ps in dbContext.Products_Suppliers on psi.ProductSupplierId equals ps.ProductSupplierId
+                                                      join p in dbContext.Products on ps.ProductId equals p.ProductId
+                                                      join s in dbContext.Suppliers on ps.SupplierId equals s.SupplierId
+                                                     select new
+                                                     {
+                                                        pack.PkgName,
+                                                        p.ProdName,
+                                                        s.SupName
+                                                     }).ToList();
+
+
+
+                //where psi.ProductSupplierId
+                //join ps in dbContext.Products_Suppliers on psi.ProductSupplierId equals ps.ProductSupplierId
+                //orderby psi.PackageId
+                // statment where products = value passed from package ID?
             }
         }
 
